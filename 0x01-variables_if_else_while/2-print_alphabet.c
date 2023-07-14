@@ -4,20 +4,22 @@
 
 /**
  * main - Entry point
+ *
+ * Description: print all alphabet letters
+ *
  * Return: Always 0 (Success)
- */
+*/
 
 int main(void)
-
 {
-	char low;
+	char ch = 'a';
 
-	for (low = 'a'; low <= 'z'; low++)
-	putchar(low);
-
-	for (low = 'A'; low <= 'Z'; low++)
-	putchar(low);
-	putchar('\n');
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
+	putchar('/n');
 
 	return (0);
 
